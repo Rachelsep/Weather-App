@@ -1,5 +1,6 @@
 body {
   background: #27b1be;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .container {
@@ -18,7 +19,6 @@ body {
   padding-left: 1px;
   padding-bottom: 15px;
   padding-top: 15px;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .searchbar {
@@ -46,7 +46,6 @@ body {
   padding: 8px 28px;
   transition: all 250ms ease;
   box-shadow: 0px 10px 15px 0px rgb(197, 197, 197, 0.5);
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 #search:hover {
@@ -55,14 +54,12 @@ body {
   border-width: 1px;
   background-color: white;
   color: #1a757e;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .current {
   text-align: left;
   margin-top: 10px;
   font-size: 20px;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .subcontainer {
@@ -70,12 +67,10 @@ body {
   margin-right: 30px;
   margin-left: 30px;
   padding-left: 20px;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .currentdata {
   margin: 10px 0px;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .currenttemp {
@@ -111,13 +106,12 @@ body {
 .currentemoji {
   font-size: 55px;
   text-align: center;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .currentcity {
   font-size: 50px;
   text-align: right;
-  font-family: "Noto Sans KR", sans-serif;
+
   margin-left: 33px;
 }
 
@@ -125,7 +119,6 @@ body {
   text-align: left;
   padding: 0px 35px;
   font-size: 18px;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .currentdatetime {
@@ -133,14 +126,12 @@ body {
   padding-left: 100px;
   font-size: 18px;
   color: #ec3d67;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .subcurrentdata {
   margin-right: 0px;
   margin-left: 1px;
   margin-top: -3px;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .othercurrentdata {
@@ -150,7 +141,6 @@ body {
   margin-bottom: 0px;
   margin-right: 30px;
   padding-left: 10px;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .daysofweek {
@@ -159,7 +149,6 @@ body {
   margin-right: 20px;
   margin-left: 20px;
   padding-left: 20px;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .sun {
@@ -171,12 +160,10 @@ body {
   box-shadow: 0px 5px 10px 0px rgb(197, 197, 197, 0.5);
   padding: 5px 30px 5px 30px;
   transition: all 250ms ease;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .sun:hover {
   background: #ececec;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .mon {
@@ -188,11 +175,9 @@ body {
   box-shadow: 0px 5px 10px 0px rgb(197, 197, 197, 0.5);
   padding: 5px 30px 5px 30px;
   transition: all 250ms ease;
-  font-family: "Noto Sans KR", sans-serif;
 }
 .mon:hover {
   background: #ececec;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .tue {
@@ -204,11 +189,9 @@ body {
   box-shadow: 0px 5px 10px 0px rgb(197, 197, 197, 0.5);
   padding: 5px 30px 5px 30px;
   transition: all 250ms ease;
-  font-family: "Noto Sans KR", sans-serif;
 }
 .tue:hover {
   background: #ececec;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .wed {
@@ -220,7 +203,6 @@ body {
   box-shadow: 0px 5px 10px 0px rgb(197, 197, 197, 0.5);
   padding: 5px 30px 5px 30px;
   transition: all 250ms ease;
-  font-family: "Noto Sans KR", sans-serif;
 }
 .wed:hover {
   background: #ececec;
@@ -235,35 +217,29 @@ body {
   box-shadow: 0px 5px 10px 0px rgb(197, 197, 197, 0.5);
   padding: 5px 30px 5px 30px;
   transition: all 250ms ease;
-  font-family: "Noto Sans KR", sans-serif;
 }
 .thu:hover {
   background: #ececec;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .emoji {
   font-size: 40px;
   margin-top: -15px;
   margin-bottom: 0px;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .weekday {
   margin-bottom: -1px;
   font-size: 18px;
   color: black;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .weektemp {
   margin-top: 3px;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .footer {
   margin: 0px 400px;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .author {
@@ -274,11 +250,9 @@ body {
   color: rgb(0, 0, 0, 0.5);
   text-decoration: none;
   font-size: 14px;
-  font-family: "Noto Sans KR", sans-serif;
 }
 .author:hover {
   color: rgb(0, 0, 0, 0.5);
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 #city {
@@ -288,5 +262,4 @@ body {
   border-width: 1px;
   padding: 4px 8px;
   background: #f5f5f5;
-  font-family: "Noto Sans KR", sans-serif;
 }
