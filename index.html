@@ -27,27 +27,27 @@
   <body>
     <div class="container">
       <div class="weatherapp">
-        <div class="row searchbar">
-          <div class="col-10">
-            <div class="form-floating mb-3">
+        <form class="searchbar">
+          <div class="row">
+            <div class="col-9">
               <input
-                type="text"
-                class="form-control"
+                text="search"
+                placeholeder="Enter City"
                 id="floatingInput"
-                placeholder="Enter City"
-                style="height: 45px"
+                class="form-control"
+                autocomplete="off"
               />
-              <label for="floatingInput">Enter City</label>
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                id="search"
+                class="searchButton"
+              />
             </div>
           </div>
-          <div class="col-2">
-            <div class="searchbutton">
-              <form>
-                <input id="search" type="submit" value="Search" />
-              </form>
-            </div>
-          </div>
-        </div>
+        </form>
 
         <div class="subcontainer">
           <div class="row current">
