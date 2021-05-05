@@ -52,6 +52,7 @@ body {
   border-width: 1px;
   background-color: white;
   color: #1a757e;
+  font-weight: 600;
 }
 
 .current {
