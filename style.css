@@ -3,8 +3,8 @@ body {
   font-family: "Noto Sans KR", sans-serif;
 }
 
-.container {
-  width: 875px;
+.weatherapp-wrapper {
+  width: 800px;
   display: block;
   margin-top: 50px;
   margin-left: auto;
