@@ -70,6 +70,7 @@ body {
 }
 
 .currentdata {
+  margin-top: -10px;
 }
 
 .currenttemp {
