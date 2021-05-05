@@ -150,7 +150,7 @@ body {
 }
 
 .sun {
-  margin: 10px 5px 55px 0px;
+  margin: 10px 20px 55px 0px;
   border-style: solid;
   border-width: 2px;
   border-color: rgb(100, 166, 219, 0.5);
@@ -165,7 +165,7 @@ body {
 }
 
 .mon {
-  margin: 10px 5px 55px 0px;
+  margin: 10px 20px 55px 0px;
   border-style: solid;
   border-width: 2px;
   border-color: rgb(100, 166, 219, 0.5);
@@ -179,7 +179,7 @@ body {
 }
 
 .tue {
-  margin: 10px 5px 55px 0px;
+  margin: 10px 20px 55px 0px;
   border-style: solid;
   border-width: 2px;
   border-color: rgb(100, 166, 219, 0.5);
@@ -193,7 +193,7 @@ body {
 }
 
 .wed {
-  margin: 10px 5px 55px 0px;
+  margin: 10px 20px 55px 0px;
   border-style: solid;
   border-width: 2px;
   border-color: rgb(100, 166, 219, 0.5);
@@ -207,7 +207,7 @@ body {
 }
 
 .thu {
-  margin: 10px 5px 55px 0px;
+  margin: 10px 20px 55px 0px;
   border-style: solid;
   border-width: 2px;
   border-color: rgb(100, 166, 219, 0.5);
