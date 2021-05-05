@@ -55,17 +55,15 @@ body {
   font-weight: 800;
 }
 
-.current {
-  text-align: left;
-  margin-top: 10px;
-  font-size: 35px;
-}
+
 
 .subcontainer {
   margin-top: 10px;
   margin-right: 30px;
   margin-left: 30px;
   padding-left: 20px;
+  text-align: left
+  font-size: 35px;
 }
 
 .currentdata {
