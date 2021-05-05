@@ -29,7 +29,7 @@ body {
 }
 
 .searchButton {
-  margin-top: -5px;
+  margin-top: -3px;
   margin-left: -10px;
   margin-bottom: 2px;
   background-color: #facc2e;
@@ -43,7 +43,7 @@ body {
   font-size: 17px;
   padding: 8px 28px;
   transition: all 250ms ease;
-  box-shadow: 0px 10px 15px 0px rgb(197, 197, 197, 0.5);
+  box-shadow: 0px 10px 10px 0px rgb(197, 197, 197, 0.5);
 }
 
 .searchButton:hover {
