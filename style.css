@@ -29,9 +29,9 @@ body {
 }
 
 .searchButton {
-  margin-top: 2px;
+  margin-top: -15px;
   margin-left: -10px;
-  margin-bottom: 100px;
+  margin-bottom: 2px;
   background-color: #facc2e;
   text-align: center;
   border-radius: 22px;
