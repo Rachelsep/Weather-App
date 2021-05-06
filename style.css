@@ -107,9 +107,9 @@ body {
 }
 
 .currentcity {
-  font-size: 75px;
-  text-align: right;
-  color: pink;
+  font-size: 65px;
+  text-align: left;
+  color: black;
 }
 
 .currentDateTime {
