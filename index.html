@@ -27,31 +27,32 @@
   <body>
     <div class="container">
       <div class="weatherapp-wrapper">
-        <div class = "weatherapp">
+        <div class="weatherapp">
           <form class="searchbar">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  text="search"
+                  placeholder="Enter City"
+                  id="floatingInput"
+                  class="form-control"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  id="search"
+                  class="searchButton"
+                />
+              </div>
+            </div>
+          </form>
+
           <div class="row">
-            <div class="col-9">
-              <input
-                text="search"
-                placeholder="Enter City"
-                id="floatingInput"
-                class="form-control"
-                autocomplete="off"
-              />
-            </div>
-            <div class="col-3">
-              <input
-                type="submit"
-                value="Search"
-                id="search"
-                class="searchButton"
-              />
-            </div>
-          </div>
-         </form>
-         <div class="row">
-          <div class="col-2 tempDescription"><strong>Sunny</strong>
-           <div class ="col-10 currentDateTime">
+            <div class="col-1 tempDescription"><strong>Sunny</strong></div>
+            <div class="col-11 currentDateTime">
               <strong id="current-time">7:00PM </strong>
               <strong id="now-date-time">Friday </strong>
               <strong id="current-month">Jan</strong>
@@ -59,36 +60,36 @@
               <strong id="current-year">2021</strong>
             </div>
           </div>
+        </div>
+        <div class="row currentdata">
+          <div class="col-5">
+            <span id="tempNow">🌤 68</span>
+            <a href="#" id="fahrenheit">F</a>
+            <span id="degreeSeparater">|</span>
+            <a href="#" id="celsius">C</a>
           </div>
-            <div class="row currentdata">
-             <div class="col-5">
-               <span id="tempNow">🌤 68</span>
-                 <a href="#" id="fahrenheit">F</a>
-               <span id="degreeSeparater">|</span>
-                 <a href="#" id="celsius">C</a>
-               </div>
-            <div class="col-7 currentcity">Capitola, CA</div>
-          </div> 
-          <div class="row">
-            <div class ="col-6"></div>
-            <div class ="col-6 currentDateTime">
-              <strong id="current-time">7:00PM </strong>
-              <strong id="now-date-time">Friday </strong>
-              <strong id="current-month">Jan</strong>
-              <strong id="current-date">16</strong>
-              <strong id="current-year">2021</strong>
-            </div>
+          <div class="col-7 currentcity">Capitola, CA</div>
+        </div>
+        <div class="row">
+          <div class="col-6"></div>
+          <div class="col-6 currentDateTime">
+            <strong id="current-time">7:00PM </strong>
+            <strong id="now-date-time">Friday </strong>
+            <strong id="current-month">Jan</strong>
+            <strong id="current-date">16</strong>
+            <strong id="current-year">2021</strong>
           </div>
-          <div class="othercurrentdata">
+        </div>
+        <div class="othercurrentdata">
           <ul>
-            <li class = "humidity" id = "current-humidity">Humidity: 0%</li>
-            <li class = "wind" id = "current-wind-speed">Wind: 2 mph </li>
+            <li class="humidity" id="current-humidity">Humidity: 0%</li>
+            <li class="wind" id="current-wind-speed">Wind: 2 mph</li>
           </ul>
-          </div>
+        </div>
 
-          <br />
+        <br />
 
-          <div class="row daysofweek">
+        <div class="row daysofweek">
           <div class="col-2 sun">
             <p class="weekday"><strong>Sun</strong></p>
             <p class="date">4/18</p>
@@ -113,14 +114,13 @@
             <p class="emoji">🌞</p>
             <p class="weektemp"><strong>67˚</strong>|48˚</p>
           </div>
-            <div class="col-2 thu">
-              <p class="weekday"><strong>Thu</strong></p>
-              <p class="date">4/22</p>
-              <p class="emoji">🌞</p>
-              <p class="weektemp"><strong>69˚</strong>|50˚</p>
-            </div>
+          <div class="col-2 thu">
+            <p class="weekday"><strong>Thu</strong></p>
+            <p class="date">4/22</p>
+            <p class="emoji">🌞</p>
+            <p class="weektemp"><strong>69˚</strong>|50˚</p>
           </div>
-    
+        </div>
       </div>
     </div>
 
