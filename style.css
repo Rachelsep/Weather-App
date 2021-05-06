@@ -64,7 +64,7 @@ body {
 .tempDescription {
   text-align: left;
   margin-top: 10px;
-  font-size: 28px;
+  font-size: 26px;
 }
 
 .currentdata {
@@ -72,7 +72,7 @@ body {
 }
 
 #tempNow {
-  font-size: 65px;
+  font-size: 55px;
   text-align: left;
   padding-left: -100px;
 }
