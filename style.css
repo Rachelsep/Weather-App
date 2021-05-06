@@ -72,9 +72,6 @@ body {
   margin-top: -18px;
 }
 
-.currenttemp {
-}
-
 #tempNow {
   font-size: 65px;
   text-align: left;
@@ -98,7 +95,7 @@ body {
   top: -34px;
 }
 
-#fahcel {
+#degreeSeparater {
   position: relative;
   text-decoration: none;
   font-size: 16px;
