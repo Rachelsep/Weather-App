@@ -112,12 +112,6 @@ body {
   text-align: left;
 }
 
-.currentdailytemprange {
-  text-align: right;
-  padding: 0px 35px;
-  font-size: 18px;
-}
-
 .currentdatetime {
   text-align: right;
   padding-left: 50px;
