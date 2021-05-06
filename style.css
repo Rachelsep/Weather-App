@@ -63,9 +63,7 @@ body {
 
 .tempDescription {
   text-align: left;
-  margin-top: 10px;
-  font-size: 26px;
-  flex-wrap: nowrap;
+  font-size: 18px;
 }
 
 .currentdata {
