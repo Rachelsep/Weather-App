@@ -91,6 +91,7 @@ body {
 }
 
 #celsius {
+  position: relative;
   text-decoration: none;
   font-size: 18px;
   color: grey;
