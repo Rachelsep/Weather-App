@@ -70,7 +70,6 @@ body {
 
 .currentdata {
   margin-top: -18px;
-  padding-left: -50px;
 }
 
 .currenttemp {
@@ -109,7 +108,7 @@ body {
 
 .currentcity {
   font-size: 50px;
-  text-align: right;
+  text-align: left;
   margin-left: 33px;
 }
 
