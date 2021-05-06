@@ -73,12 +73,12 @@ body {
 }
 
 .currenttemp {
-  text-align: left;
-  padding-left: -100px;
 }
 
 #tempNow {
   font-size: 65px;
+  text-align: left;
+  padding-left: -100px;
 }
 
 #fahrenheit {
