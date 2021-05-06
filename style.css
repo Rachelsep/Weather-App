@@ -113,10 +113,9 @@ body {
 }
 
 .currentDateTime {
-  text-align: left;
+  text-align: ;
   font-size: 18px;
   color: #ec3d67;
-  line-height: -10;
 }
 
 ul {
