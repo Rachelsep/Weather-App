@@ -109,6 +109,7 @@ body {
 .currentcity {
   font-size: 50px;
   text-align: left;
+  position: relative;
 }
 
 .currentDateTime {
