@@ -114,7 +114,7 @@ body {
 
 .currentdatetime {
   text-align: right;
-  padding-left: 50px;
+  padding-right: -10px;
   font-size: 18px;
   color: #ec3d67;
   border-style: solid;
