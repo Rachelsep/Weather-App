@@ -108,12 +108,12 @@ body {
 
 .currentcity {
   font-size: 55px;
-  text-align: left;
+  text-align: center;
   color: black;
 }
 
 .currentDateTime {
-  text-align: left;
+  text-align: center;
   font-size: 18px;
   color: #ec3d67;
   line-height: -10;
