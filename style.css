@@ -109,10 +109,6 @@ body {
 #celsius:hover {
   font-weight: bold;
 }
-.currentemoji {
-  font-size: 55px;
-  text-align: left;
-}
 
 .currentcity {
   font-size: 50px;
