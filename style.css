@@ -62,12 +62,12 @@ body {
 }
 
 .tempDescription {
-  position: relative;
   text-align: left;
   font-size: 20px;
 }
 
 .currentdata {
+  position: relative;
 }
 
 #tempNow {
