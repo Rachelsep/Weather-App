@@ -116,6 +116,9 @@ body {
   font-size: 18px;
   color: #ec3d67;
 }
+.othercurrentdata {
+  margin-top: 10px;
+}
 
 ul {
   text-align: left;
