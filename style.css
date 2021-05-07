@@ -73,7 +73,7 @@ body {
   font-size: 55px;
   text-align: left;
   padding-left: -100px;
-  position: relative;
+  line-height: 5;
 }
 
 #fahrenheit {
