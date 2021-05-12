@@ -21,7 +21,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="editstyle.css" />
   </head>
 
   <body>
@@ -49,36 +49,38 @@
               </div>
             </div>
           </form>
-        <div class="row currentconditions">
-          <div class="col-6 tempDescription">
-            <strong>San Jose, CA</strong>
+          <div class="row cityheader">
+            <div class="col-3">
+              <strong id="currentcity">San Jose, CA</strong>
+            </div>          
           </div>
-          <div class="col-6 currentDateTime">
-            <strong id="current-time">7:00PM </strong>
-            <strong id="now-date-time">Friday </strong>
-            <strong id="current-month">Jan</strong>
-            <strong id="current-date">16</strong>
-            <strong id="current-year">2021</strong>
+          <div class="row">
+            <div class="col-12 currentDateTime">
+              <span id="now-date-time">Friday </span>
+              <span id="current-month">May</span>
+              <span id="current-date">16,</span>
+              <span id="current-year">2021</span>
+              <br />
+               <span id="current-time">Current time: 7:00 PM </span>
+            </div>
           </div>
-        </div>
-         <div class="row currentdata">
-          <div class="col-12">
-            <span id="tempNow">🌤 68</span>
-            <a href="#" id="fahrenheit">F</a>
-            <span id="degreeSeparater">|</span>
-            <a href="#" id="celsius">C</a>
+          <div class="row">
+            <div class="col-5 currentdata">
+              <div id = "currentcondition">Sunny</div>
+              <img src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" alt="Weather Icon" id="currentIcon" height="75px">
+                <span id="tempNow">68</span>
+                <a href="#" id="fahrenheit" class="active units">˚F</a>
+                <span id="degreeSeparater">|</span>
+               <a href="#" id="celsius" class="units">˚C</a>
+              </div>
+            <div class="col-7 othercurrentdata">
+              <ul>
+                <li class="tempFeelsLike"><strong>Feels like: </strong><span id="feels-like-temp">50</span><span id="feels-like-unit">˚F</span></li>
+                <li class="humidity"><strong>Humidity:</strong> <span id="current-humidity">0%</span></li>
+                <li class="wind"><strong>Wind:</strong> <span id="current-wind-speed">2 mph</span></li>
+              </ul>
+            </div>
           </div>
-          
-</div>
-         <div class="othercurrentdata">
-          <ul>
-            <li class="humidity" id="current-humidity">Humidity: 0%</li>
-            <li class="wind" id="current-wind-speed">Wind: 2 mph</li>
-          </ul>
-        </div>
-
-        <br />
-
         <div class="row daysofweek">
           <div class="col-2 sun">
             <p class="weekday"><strong>Sun</strong></p>
@@ -113,22 +115,20 @@
         </div>
       </div>
     </div>
-
-    <p class="footer">
+    <div class="footer">
       <a
         class="author"
         href="https://www.linkedin.com/in/rachelsepulveda1/"
         target="_blank"
-        >Created by Rachel Sepulveda</a
+        >Created by Rachel Sepulveda | </a
       >
-
       <a
         class="author"
         href="https://github.com/Rachelsep/Weather-App.git"
         target="_blank"
         >Open source code</a
       >
-    </p>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
