@@ -101,20 +101,39 @@ function updateDateTime(response) {
   currentYear.innerHTML = now.getFullYear();
 }
 
+function displayDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 function displayForecast(response) {
-  console.log(response.data.daily);
+  let weeklyForecast = response.data.daily;
+
   let forecast = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
-  let days = [`Thur`, `Fri`, `Sat`, `Sun`, `Mon`];
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      ` <div class="col-2 day">
-            <span class="weekday"><strong>${day}</strong></span>
+
+  weeklyForecast.forEach(function (forecastDay, index) {
+    if (index < 5) {
+      forecastHTML =
+        forecastHTML +
+        ` <div class="col-2 day">
+            <span class="weekday"><strong>${displayDay(
+              forecastDay.dt
+            )}</strong></span>
             <span class="date">4/18</span>
-            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" alt="Weekly Weather Icon" class="emoji" width="50px">
-            <span class="weektemp"><strong id="max-temp">70˚</strong>|<spani id="min-temp">50˚</span></span>
+            <img src= "http://openweathermap.org/img/wn/${
+              forecastDay.weather[0].icon
+            }@2x.png" alt="Weekly Weather Icon" class="emoji" width="50px">
+            <span class="weektemp"><strong id="max-temp">${Math.round(
+              forecastDay.temp.max
+            )}</strong>|<spani id="min-temp">${Math.round(
+          forecastDay.temp.min
+        )}</span></span>
           </div>`;
+    }
   });
   forecastHTML = forecastHTML + `</div>`;
   forecast.innerHTML = forecastHTML;
