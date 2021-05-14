@@ -178,7 +178,7 @@ ul {
   color: #ec3d67;
 }
 
-.sun {
+.day {
   margin: 10px 20px 15px 0px;
   border-style: solid;
   border-width: 1px;
@@ -189,63 +189,7 @@ ul {
   transition: all 250ms ease;
 }
 
-.sun:hover {
-  background: #ececec;
-}
-
-.mon {
-  margin: 10px 20px 20px 0px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(100, 166, 219, 0.5);
-  border-radius: 10px;
-  box-shadow: 0px 5px 10px 0px rgb(197, 197, 197, 0.5);
-  padding: 5px 30px 5px 30px;
-  transition: all 250ms ease;
-}
-.mon:hover {
-  background: #ececec;
-}
-
-.tue {
-  margin: 10px 20px 20px 0px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(100, 166, 219, 0.5);
-  border-radius: 10px;
-  box-shadow: 0px 5px 10px 0px rgb(197, 197, 197, 0.5);
-  padding: 5px 30px 5px 30px;
-  transition: all 250ms ease;
-}
-.tue:hover {
-  background: #ececec;
-}
-
-.wed {
-  margin: 10px 20px 20px 0px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(100, 166, 219, 0.5);
-  border-radius: 10px;
-  box-shadow: 0px 5px 10px 0px rgb(197, 197, 197, 0.5);
-  padding: 5px 30px 5px 30px;
-  transition: all 250ms ease;
-}
-.wed:hover {
-  background: #ececec;
-}
-
-.thu {
-  margin: 10px 20px 20px 0px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(100, 166, 219, 0.5);
-  border-radius: 10px;
-  box-shadow: 0px 5px 10px 0px rgb(197, 197, 197, 0.5);
-  padding: 5px 30px 5px 30px;
-  transition: all 250ms ease;
-}
-.thu:hover {
+.day:hover {
   background: #ececec;
 }
 

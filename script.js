@@ -1,5 +1,8 @@
-//Search Engine Begins
-//Linking API & Getting City Temperature
+function getWeeklyForecast(coordinates) {
+  let apiKey = "750434103a834cc2e7cdf102e6bafd91";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayForecast);
+}
 
 function updateWeather(response) {
   console.log(response);
@@ -38,6 +41,10 @@ function updateWeather(response) {
   fahrenheitTemp = Math.round(response.data.main.temp);
   feelsLike = Math.round(response.data.main.feels_like);
 
+  getWeeklyForecast(response.data.coord);
+}
+
+function updateDateTime(response) {
   //updating current date
   let now = new Date();
   let days = [
@@ -94,6 +101,25 @@ function updateWeather(response) {
   currentYear.innerHTML = now.getFullYear();
 }
 
+function displayForecast(response) {
+  console.log(response.data.daily);
+  let forecast = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = [`Thur`, `Fri`, `Sat`, `Sun`, `Mon`];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` <div class="col-2 day">
+            <span class="weekday"><strong>${day}</strong></span>
+            <span class="date">4/18</span>
+            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" alt="Weekly Weather Icon" class="emoji" width="50px">
+            <span class="weektemp"><strong id="max-temp">70˚</strong>|<spani id="min-temp">50˚</span></span>
+          </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecast.innerHTML = forecastHTML;
+}
+
 //Converting Fahrenheit to Celsius
 function convertTemptoCelsius(event) {
   event.preventDefault();
@@ -147,7 +173,7 @@ let feelsLike = null;
 let celsiusFeelsLikesConversion = null;
 
 //Display updated city name when searching for a city
-function getForcast(event) {
+function searchCity(event) {
   event.preventDefault();
   let inputCity = document.querySelector("#floatingInput");
   let updatedCity = document.querySelector("#currentcity");
@@ -155,6 +181,8 @@ function getForcast(event) {
   let apiKey = "750434103a834cc2e7cdf102e6bafd91";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${inputCity.value}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(updateWeather);
+
+  updateDateTime();
 }
 let searchButton = document.querySelector("#search");
-searchButton.addEventListener("click", getForcast);
+searchButton.addEventListener("click", searchCity);
