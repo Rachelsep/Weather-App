@@ -21,7 +21,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="editstyle.css" />
   </head>
 
   <body>
@@ -51,31 +51,31 @@
           </form>
           <div class="row cityheader">
             <div class="col-3">
-              <strong id="currentcity">Capitola</strong>
+              <strong id="currentcity"></strong>
             </div>          
           </div>
           <div class="row">
             <div class="col-12 currentDateTime">
-              <span id="now-date-time">Friday </span>
-              <span id="current-month">May</span>
-              <span id="current-date">16,</span>
-              <span id="current-year">2021</span>
+              <span id="now-date-time"></span>
+              <span id="current-month"></span>
+              <span id="current-date"></span>
+              <span id="current-year"></span>
               <br />
-               <span id="current-time">Current time: 7:00 PM </span>
+               <span id="current-time"></span>
             </div>
           </div>
           <div class="row">
             <div class="col-5 currentdata">
-              <div id = "currentcondition">Sunny</div>
+              <div id = "currentcondition"></div>
               <img src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" alt="Weather Icon" id="currentIcon" height="80px">
-                <span id="tempNow">68</span>
+                <span id="tempNow"></span>
                 <a href="#" id="fahrenheit" class="units">˚F</a>
               </div>
             <div class="col-7 othercurrentdata">
               <ul>
-                <li class="tempFeelsLike"><strong>Feels like: </strong><span id="feels-like-temp">50</span><span id="feels-like-unit">˚F</span></li>
-                <li class="humidity"><strong>Humidity:</strong> <span id="current-humidity">0%</span></li>
-                <li class="wind"><strong>Wind:</strong> <span id="current-wind-speed">2 mph</span></li>
+                <li class="tempFeelsLike"><strong>Feels like: </strong><span id="feels-like-temp"></span><span id="feels-like-unit">˚F</span></li>
+                <li class="humidity"><strong>Humidity: </strong> <span id="current-humidity"></span></li>
+                <li class="wind"><strong>Wind: </strong> <span id="current-wind-speed"></span></li>
               </ul>
             </div>
           </div>
@@ -96,6 +96,6 @@
         >Open source code</a
       >
     </div>
-    <script src="script.js"></script>
+    <script src="editscript.js"></script>
   </body>
 </html>

@@ -67,8 +67,8 @@ body {
 
 .currentDateTime {
   text-align: left;
-  font-size: 14px;
-  color: grey;
+  font-size: 15px;
+  color: rgb(0, 0, 0, 0.7);
 }
 
 #currentIcon {
@@ -89,7 +89,13 @@ body {
   font-size: 20px;
   color: black;
   text-decoration: none;
+  cursor: default;
   top: -34px;
+}
+
+.units:hover {
+  text-decoration: none;
+  color: black;
 }
 
 .othercurrentdata {
@@ -100,7 +106,7 @@ body {
 
 #currentcondition {
   margin-top: 17px;
-  font-size: 19px;
+  font-size: 18px;
   margin-bottom: -12px;
   font-weight: 500;
   color: #ec3d67;
@@ -114,6 +120,7 @@ ul {
   margin-right: 30px;
   padding-left: 0px;
   list-style-type: none;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 #feels-like-unit {
@@ -144,16 +151,17 @@ ul {
 }
 
 .icon {
-  margin-left: -10px;
   display: block;
+  margin: 0 auto;
 }
 
 .weektemp {
-  margin-top: 3px;
-  margin-bottom: 3px;
-  margin-left: -7px;
   font-size: 15px;
   color: #ec3d67;
+}
+
+#min-temp {
+  color: rgb(236, 60, 101, 0.8);
 }
 
 .day {
@@ -163,12 +171,12 @@ ul {
   border-color: rgb(100, 166, 219, 0.5);
   border-radius: 10px;
   box-shadow: 0px 5px 10px 0px rgb(197, 197, 197, 0.5);
-  padding: 5px 30px 5px 30px;
+  padding: 5px 0px;
   transition: all 250ms ease;
 }
 
 .day:hover {
-  background: #ececec;
+  background: rgb(250, 204, 46, 0.3);
 }
 
 .footer {

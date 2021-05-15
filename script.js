@@ -40,7 +40,6 @@ function updateWeather(response) {
   let updatedWindSpeed = document.querySelector("#current-wind-speed");
   updatedWindSpeed.innerHTML = ` ${windSpeed} mph`;
 
-  fahrenheitTemp = Math.round(response.data.main.temp);
   feelsLike = Math.round(response.data.main.feels_like);
 
   getWeeklyForecast(response.data.coord);
@@ -131,11 +130,14 @@ function displayForecast(response) {
             <img src= "http://openweathermap.org/img/wn/${
               forecastDay.weather[0].icon
             }@2x.png" alt="Weekly Weather Icon" class="icon" width=60px">
-            <span class="weektemp"><strong id="max-temp">${Math.round(
-              forecastDay.temp.max
-            )}</strong> | <span id="min-temp">${Math.round(
-          forecastDay.temp.min
-        )}</span></span>
+            <div class="weektemp">
+              <span><strong id="max-temp">
+              ${Math.round(forecastDay.temp.max)}
+               </strong></span>| 
+             <span id="min-temp"><strong>
+             ${Math.round(forecastDay.temp.min)}
+             </strong></span>
+             </div>
           </div>`;
     }
   });
