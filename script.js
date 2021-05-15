@@ -133,9 +133,9 @@ function displayForecast(response) {
             }@2x.png" alt="Weekly Weather Icon" class="icon" width=60px">
             <span class="weektemp"><strong id="max-temp">${Math.round(
               forecastDay.temp.max
-            )}˚F</strong>|<span id="min-temp">${Math.round(
+            )}</strong> | <span id="min-temp">${Math.round(
           forecastDay.temp.min
-        )}˚F</span></span>
+        )}</span></span>
           </div>`;
     }
   });
