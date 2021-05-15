@@ -150,11 +150,10 @@ ul {
 
 .weektemp {
   margin-top: 3px;
-  margin-bottom: 2px;
-  margin-left: -10px;
+  margin-bottom: 3px;
+  margin-left: -5px;
   font-size: 15px;
   color: #ec3d67;
-  text-align: center;
 }
 
 .day {
