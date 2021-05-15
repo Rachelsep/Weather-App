@@ -92,11 +92,6 @@ body {
   top: -34px;
 }
 
-.active {
-  text-decoration: none;
-  color: #ec3d67;
-}
-
 .othercurrentdata {
   text-align: left;
   margin-top: 2px;
