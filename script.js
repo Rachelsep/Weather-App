@@ -143,58 +143,6 @@ function displayForecast(response) {
   forecast.innerHTML = forecastHTML;
 }
 
-//Converting Fahrenheit to Celsius
-function convertTemptoCelsius(event) {
-  event.preventDefault();
-  clickFahrenheit.classList.remove("active");
-  clickCelsius.classList.add("active");
-
-  //converting current temp
-  celsiusConversion = Math.round(((fahrenheitTemp - 32) * 5) / 9);
-  let newCelsius = document.querySelector("#tempNow");
-  newCelsius.innerHTML = celsiusConversion;
-
-  //converting feels like temp
-  celsiusFeelsLikesConversion = Math.round(((feelsLike - 32) * 5) / 9);
-  let feelsLikeTemp = document.querySelector("#feels-like-temp");
-  feelsLikeTemp.innerHTML = celsiusFeelsLikesConversion;
-
-  //updating feels like units
-  let changeUnit = document.querySelector("#feels-like-unit");
-  changeUnit.innerHTML = `˚C`;
-}
-
-let clickCelsius = document.querySelector("#celsius");
-clickCelsius.addEventListener("click", convertTemptoCelsius);
-
-//Converting Celsius to Fahrenheit
-function convertTemptoFahrenheit(event) {
-  event.preventDefault();
-  clickFahrenheit.classList.add("active");
-  clickCelsius.classList.remove("active");
-  let fahrenheitConversion = Math.round(celsiusConversion * 1.8 + 32);
-  let newFahrenheit = document.querySelector("#tempNow");
-  newFahrenheit.innerHTML = fahrenheitConversion;
-
-  //converting feels like temp
-  let fahrenheitFeelsLikesConversion = Math.round(
-    celsiusFeelsLikesConversion * 1.8 + 32
-  );
-  let feelsLikeTemp = document.querySelector("#feels-like-temp");
-  feelsLikeTemp.innerHTML = fahrenheitFeelsLikesConversion;
-
-  //updating unit
-  let changeUnit = document.querySelector("#feels-like-unit");
-  changeUnit.innerHTML = `˚F`;
-}
-let clickFahrenheit = document.querySelector("#fahrenheit");
-clickFahrenheit.addEventListener("click", convertTemptoFahrenheit);
-
-let celsiusConversion = null;
-let fahrenheitTemp = null;
-let feelsLike = null;
-let celsiusFeelsLikesConversion = null;
-
 //Display updated city name when searching for a city
 function searchCity(event) {
   event.preventDefault();
