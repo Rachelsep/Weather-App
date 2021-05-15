@@ -129,9 +129,9 @@ function displayForecast(response) {
             }@2x.png" alt="Weekly Weather Icon" class="emoji" width="50px">
             <span class="weektemp"><strong id="max-temp">${Math.round(
               forecastDay.temp.max
-            )}</strong>|<spani id="min-temp">${Math.round(
+            )}˚F</strong>|<spani id="min-temp">${Math.round(
           forecastDay.temp.min
-        )}</span></span>
+        )}˚F</span></span>
           </div>`;
     }
   });
