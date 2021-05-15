@@ -1,9 +1,11 @@
+//Accesses the API for to obtain the weekly 5 day forecast
 function getWeeklyForecast(coordinates) {
   let apiKey = "750434103a834cc2e7cdf102e6bafd91";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayForecast);
 }
 
+//Displays the current weather conditions of the searched city
 function updateWeather(response) {
   console.log(response);
   //updating current conditions
@@ -44,6 +46,7 @@ function updateWeather(response) {
   getWeeklyForecast(response.data.coord);
 }
 
+//Displays the current date and time
 function updateDateTime(response) {
   //updating current date
   let now = new Date();
@@ -101,6 +104,7 @@ function updateDateTime(response) {
   currentYear.innerHTML = now.getFullYear();
 }
 
+//Obtaining the days for the weekly 5 day forecast
 function displayDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
@@ -109,6 +113,7 @@ function displayDay(timestamp) {
   return days[day];
 }
 
+//Display the weekly 5 days forecast and updating HTML
 function displayForecast(response) {
   let weeklyForecast = response.data.daily;
 
@@ -116,20 +121,19 @@ function displayForecast(response) {
   let forecastHTML = `<div class="row">`;
 
   weeklyForecast.forEach(function (forecastDay, index) {
-    if (index < 5) {
+    if (index > 0 && index < 6) {
       forecastHTML =
         forecastHTML +
         ` <div class="col-2 day">
             <span class="weekday"><strong>${displayDay(
               forecastDay.dt
             )}</strong></span>
-            <span class="date">4/18</span>
             <img src= "http://openweathermap.org/img/wn/${
               forecastDay.weather[0].icon
-            }@2x.png" alt="Weekly Weather Icon" class="emoji" width="50px">
+            }@2x.png" alt="Weekly Weather Icon" class="icon" width=60px">
             <span class="weektemp"><strong id="max-temp">${Math.round(
               forecastDay.temp.max
-            )}˚F</strong>|<spani id="min-temp">${Math.round(
+            )}˚F</strong>|<span id="min-temp">${Math.round(
           forecastDay.temp.min
         )}˚F</span></span>
           </div>`;
@@ -203,5 +207,18 @@ function searchCity(event) {
 
   updateDateTime();
 }
+
 let searchButton = document.querySelector("#search");
 searchButton.addEventListener("click", searchCity);
+
+//Displays inital city upon opening app
+function initialCity() {
+  let updatedCity = document.querySelector("#currentcity");
+  updatedCity.innerHTML = "San Francisco";
+  let apiKey = "750434103a834cc2e7cdf102e6bafd91";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=San Francisco&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(updateWeather);
+
+  updateDateTime();
+}
+initialCity();

@@ -78,7 +78,7 @@ body {
 }
 
 #tempNow {
-  font-size: 63px;
+  font-size: 65px;
   text-align: left;
   padding-left: -100px;
   line-height: -2;
@@ -86,7 +86,7 @@ body {
 
 .units {
   position: relative;
-  font-size: 17px;
+  font-size: 16px;
   color: black;
   text-decoration: none;
   top: -34px;
@@ -100,7 +100,7 @@ body {
 #degreeSeparater {
   position: relative;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
   color: black;
   top: -34px;
 }
@@ -118,7 +118,7 @@ body {
 
 #currentcondition {
   margin-top: 17px;
-  font-size: 17px;
+  font-size: 19px;
   margin-bottom: -12px;
   font-weight: 500;
   color: #ec3d67;
@@ -161,21 +161,18 @@ ul {
   color: black;
 }
 
-.date {
-  font-size: 15px;
-}
-
-.emoji {
-  font-size: 30px;
-  margin-top: -15px;
-  margin-bottom: 5px;
+.icon {
+  margin-left: -10px;
+  display: block;
 }
 
 .weektemp {
   margin-top: 3px;
   margin-bottom: 2px;
+  margin-left: -10px;
   font-size: 15px;
   color: #ec3d67;
+  text-align: center;
 }
 
 .day {
